@@ -23,7 +23,7 @@ jobs:
           include-prerelease: true
 
       - name: Build with dotnet
-        run: dotnet build ./TestApp.Sln --configuration Release
+        run: dotnet build ./TestApp --configuration Release
 
       - name: dotnet publish
         run: dotnet publish TestApp -c Release -o ${{env.DOTNET_ROOT}}/myapp
